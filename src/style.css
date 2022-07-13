@@ -10,7 +10,8 @@
   --clr-neutral1: hsl(229, 64%, 46%);
   --clr-neutral2: hsl(217, 16%, 45%);
 
-  --clr-bg: linear-gradient(hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+  --clr-bg0: hsl(214, 47%, 23%);
+  --clr-bg1: hsl(237, 49%, 15%);
 
   --f-family: 'Barlow Semi Condensed', sans-serif;
   --f-weight0: 600;
@@ -23,4 +24,14 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+}
+
+
+html {
+  font-family: var(--f-family);
+} 
+
+body {
+  block-size: 100vh;
+  background: linear-gradient(var(--clr-bg0), var(--clr-bg1));
 }
